@@ -104,7 +104,7 @@ impl Cpu {
 
         match opcode {
             0x1 | 0x9 | 0x19 | 0x29 | 0x31 | 0x39 => {
-                // 	16 bit register to 16 bit r/m
+                // 16 bit register to 16 bit r/m
                 let operation = match opcode {
                     0x1 => Operation::Add,
                     0x9 => Operation::And,
